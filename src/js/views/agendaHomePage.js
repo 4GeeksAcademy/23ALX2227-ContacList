@@ -12,7 +12,7 @@ export const AgendaHomePage = () => {
 
     return (
         <div className="container">
-            <nav className="navbar navbar-light bg-light  rounded-bottom-1 mb-3 ">
+            <nav className="navbar navbar-light bg-light  rounded-bottom-1 mb-1 ">
                 <span className="navbar-brand mb-1 "></span>
                 <div className="ml-auto">
                     <Link to="/agenda_form">
@@ -82,13 +82,13 @@ export const AgendaHomePage = () => {
                                     </div>
                                 </div>
                             </div>
-
+                            <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target={`deleteUser${key}`} >Launch demo modal</button>
                             <div className="modal fade" id={`deleteUser${key}`} tabIndex="-1" aria-hidden="true">
                                 <div className="modal-dialog">
                                     <div className="modal-content">
                                         <div className="modal-header">
                                             <h1 className="modal-title fs-5" >Are you sure?</h1>
-                                            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close">❌</button>
                                         </div>
                                         <div className="modal-body">
                                             If you delete this thing the entire universe will go down!
@@ -104,5 +104,29 @@ export const AgendaHomePage = () => {
                 </ul>}
                 </div>
         </div>
-    )
+        )
 }
+
+// Button trigger modal
+// <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+//   Launch demo modal
+// </button>
+
+// Modal
+// <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+//   <div class="modal-dialog">
+//     <div class="modal-content">
+//       <div class="modal-header">
+//         <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+//         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+//       </div>
+//       <div class="modal-body">
+//         ...
+//       </div>
+//       <div class="modal-footer">
+//         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+//         <button type="button" class="btn btn-primary">Save changes</button>
+//       </div>
+//     </div>
+//   </div>
+// </div>
