@@ -1,7 +1,7 @@
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 	  store: {
-		contactList: [
+		contactList: [			
 		
 		],
 	  },
@@ -21,7 +21,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 		  });
 		},
 		contact: () => {
-		  fetch("https://assets.breatheco.de/apis/fake/contact/agenda/JamesWList", {
+		  fetch("https://assets.breatheco.de/apis/fake/contact/agenda/alx2024", {
 			  method: "GET", 
 			  headers: {"content-type": "application/json"},
   
