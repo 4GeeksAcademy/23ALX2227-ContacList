@@ -10,7 +10,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			inputs: {
 				nameInput: "",
 				emailInput: "",
-				agenda_slug: "estarlin_agenda",
+				agenda_slug: "alex_agenda",
 				addressInput: "",
 				phoneInput: ""
 			}
